@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44D88FD01C3CB38F0007F9A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D88FCF1C3CB38F0007F9A9 /* main.m */; };
+		44D88FD31C3CB38F0007F9A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D88FD21C3CB38F0007F9A9 /* AppDelegate.m */; };
+		44D88FD61C3CB38F0007F9A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D88FD51C3CB38F0007F9A9 /* ViewController.m */; };
+		44D88FD91C3CB38F0007F9A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D88FD71C3CB38F0007F9A9 /* Main.storyboard */; };
+		44D88FDB1C3CB38F0007F9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D88FDA1C3CB38F0007F9A9 /* Assets.xcassets */; };
+		44D88FDE1C3CB38F0007F9A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D88FDC1C3CB38F0007F9A9 /* LaunchScreen.storyboard */; };
+		44D88FE91C3CB38F0007F9A9 /* XHWxPayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D88FE81C3CB38F0007F9A9 /* XHWxPayDemoTests.m */; };
+		44D88FF41C3CB38F0007F9A9 /* XHWxPayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D88FF31C3CB38F0007F9A9 /* XHWxPayDemoUITests.m */; };
+		44D890031C3CB7280007F9A9 /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44D890021C3CB7280007F9A9 /* ApiXml.mm */; };
+		44D890061C3CB7400007F9A9 /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44D890051C3CB7400007F9A9 /* WXUtil.mm */; };
+		44D8900D1C3CB74D0007F9A9 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D890081C3CB74D0007F9A9 /* WXApiManager.m */; };
+		44D8900E1C3CB74D0007F9A9 /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D8900A1C3CB74D0007F9A9 /* WXApiRequestHandler.m */; };
+		44D8900F1C3CB74D0007F9A9 /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D8900C1C3CB74D0007F9A9 /* WXApiResponseHandler.m */; };
+		44D890161C3CB7A40007F9A9 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D890111C3CB7A40007F9A9 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		44D890171C3CB7A40007F9A9 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D890131C3CB7A40007F9A9 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		44D890181C3CB7A40007F9A9 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D890151C3CB7A40007F9A9 /* WXMediaMessage+messageConstruct.m */; };
+		44D8901E1C3CB8770007F9A9 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D890191C3CB8770007F9A9 /* libWeChatSDK.a */; };
+		44D8901F1C3CB8770007F9A9 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 44D8901A1C3CB8770007F9A9 /* read_me.txt */; };
+		44D890221C3CB9330007F9A9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D890211C3CB9330007F9A9 /* CoreTelephony.framework */; };
+		44D890241C3CB9430007F9A9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D890231C3CB9430007F9A9 /* SystemConfiguration.framework */; };
+		44D890261C3CB9520007F9A9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D890251C3CB9520007F9A9 /* libz.tbd */; };
+		44D890281C3CB95C0007F9A9 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D890271C3CB95C0007F9A9 /* libsqlite3.0.tbd */; };
+		44D8902A1C3CB9650007F9A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D890291C3CB9650007F9A9 /* UIKit.framework */; };
+		44D8902C1C3CB9700007F9A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D8902B1C3CB9700007F9A9 /* Foundation.framework */; };
+		44D8902E1C3CBAFE0007F9A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D8902D1C3CBAFE0007F9A9 /* Security.framework */; };
+		44D890341C3CC4980007F9A9 /* WXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D890331C3CC4980007F9A9 /* WXHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44D88FE51C3CB38F0007F9A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D88FC31C3CB38F0007F9A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D88FCA1C3CB38F0007F9A9;
+			remoteInfo = XHWxPayDemo;
+		};
+		44D88FF01C3CB38F0007F9A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44D88FC31C3CB38F0007F9A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44D88FCA1C3CB38F0007F9A9;
+			remoteInfo = XHWxPayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44D88FCB1C3CB38F0007F9A9 /* XHWxPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHWxPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D88FCF1C3CB38F0007F9A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44D88FD11C3CB38F0007F9A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44D88FD21C3CB38F0007F9A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44D88FD41C3CB38F0007F9A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44D88FD51C3CB38F0007F9A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44D88FD81C3CB38F0007F9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44D88FDA1C3CB38F0007F9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44D88FDD1C3CB38F0007F9A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44D88FDF1C3CB38F0007F9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D88FE41C3CB38F0007F9A9 /* XHWxPayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHWxPayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D88FE81C3CB38F0007F9A9 /* XHWxPayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHWxPayDemoTests.m; sourceTree = "<group>"; };
+		44D88FEA1C3CB38F0007F9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D88FEF1C3CB38F0007F9A9 /* XHWxPayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHWxPayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D88FF31C3CB38F0007F9A9 /* XHWxPayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHWxPayDemoUITests.m; sourceTree = "<group>"; };
+		44D88FF51C3CB38F0007F9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44D890011C3CB7280007F9A9 /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiXml.h; sourceTree = "<group>"; };
+		44D890021C3CB7280007F9A9 /* ApiXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiXml.mm; sourceTree = "<group>"; };
+		44D890041C3CB7400007F9A9 /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtil.h; sourceTree = "<group>"; };
+		44D890051C3CB7400007F9A9 /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
+		44D890071C3CB74D0007F9A9 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		44D890081C3CB74D0007F9A9 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		44D890091C3CB74D0007F9A9 /* WXApiRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiRequestHandler.h; sourceTree = "<group>"; };
+		44D8900A1C3CB74D0007F9A9 /* WXApiRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiRequestHandler.m; sourceTree = "<group>"; };
+		44D8900B1C3CB74D0007F9A9 /* WXApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiResponseHandler.h; sourceTree = "<group>"; };
+		44D8900C1C3CB74D0007F9A9 /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiResponseHandler.m; sourceTree = "<group>"; };
+		44D890101C3CB7A40007F9A9 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		44D890111C3CB7A40007F9A9 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		44D890121C3CB7A40007F9A9 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		44D890131C3CB7A40007F9A9 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		44D890141C3CB7A40007F9A9 /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		44D890151C3CB7A40007F9A9 /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		44D890191C3CB8770007F9A9 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		44D8901A1C3CB8770007F9A9 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		44D8901B1C3CB8770007F9A9 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		44D8901C1C3CB8770007F9A9 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		44D8901D1C3CB8770007F9A9 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		44D890211C3CB9330007F9A9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		44D890231C3CB9430007F9A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		44D890251C3CB9520007F9A9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		44D890271C3CB95C0007F9A9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		44D890291C3CB9650007F9A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44D8902B1C3CB9700007F9A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44D8902D1C3CBAFE0007F9A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		44D890301C3CBC380007F9A9 /* XHPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHPrefixHeader.pch; sourceTree = "<group>"; };
+		44D890311C3CBD230007F9A9 /* XHDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHDefine.h; sourceTree = "<group>"; };
+		44D890321C3CC4980007F9A9 /* WXHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHelper.h; sourceTree = "<group>"; };
+		44D890331C3CC4980007F9A9 /* WXHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44D88FC81C3CB38F0007F9A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D8902E1C3CBAFE0007F9A9 /* Security.framework in Frameworks */,
+				44D8902C1C3CB9700007F9A9 /* Foundation.framework in Frameworks */,
+				44D8902A1C3CB9650007F9A9 /* UIKit.framework in Frameworks */,
+				44D890281C3CB95C0007F9A9 /* libsqlite3.0.tbd in Frameworks */,
+				44D890261C3CB9520007F9A9 /* libz.tbd in Frameworks */,
+				44D890241C3CB9430007F9A9 /* SystemConfiguration.framework in Frameworks */,
+				44D890221C3CB9330007F9A9 /* CoreTelephony.framework in Frameworks */,
+				44D8901E1C3CB8770007F9A9 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D88FE11C3CB38F0007F9A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D88FEC1C3CB38F0007F9A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44D88FC21C3CB38F0007F9A9 = {
+			isa = PBXGroup;
+			children = (
+				44D8902F1C3CBB890007F9A9 /* FrameWorks */,
+				44D890201C3CB8850007F9A9 /* WxPayAPI */,
+				44D88FCD1C3CB38F0007F9A9 /* XHWxPayDemo */,
+				44D88FE71C3CB38F0007F9A9 /* XHWxPayDemoTests */,
+				44D88FF21C3CB38F0007F9A9 /* XHWxPayDemoUITests */,
+				44D88FCC1C3CB38F0007F9A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44D88FCC1C3CB38F0007F9A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D88FCB1C3CB38F0007F9A9 /* XHWxPayDemo.app */,
+				44D88FE41C3CB38F0007F9A9 /* XHWxPayDemoTests.xctest */,
+				44D88FEF1C3CB38F0007F9A9 /* XHWxPayDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44D88FCD1C3CB38F0007F9A9 /* XHWxPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				44D890311C3CBD230007F9A9 /* XHDefine.h */,
+				44D890321C3CC4980007F9A9 /* WXHelper.h */,
+				44D890331C3CC4980007F9A9 /* WXHelper.m */,
+				44D88FD11C3CB38F0007F9A9 /* AppDelegate.h */,
+				44D88FD21C3CB38F0007F9A9 /* AppDelegate.m */,
+				44D88FD41C3CB38F0007F9A9 /* ViewController.h */,
+				44D88FD51C3CB38F0007F9A9 /* ViewController.m */,
+				44D88FD71C3CB38F0007F9A9 /* Main.storyboard */,
+				44D88FDA1C3CB38F0007F9A9 /* Assets.xcassets */,
+				44D88FDC1C3CB38F0007F9A9 /* LaunchScreen.storyboard */,
+				44D88FDF1C3CB38F0007F9A9 /* Info.plist */,
+				44D88FCE1C3CB38F0007F9A9 /* Supporting Files */,
+			);
+			path = XHWxPayDemo;
+			sourceTree = "<group>";
+		};
+		44D88FCE1C3CB38F0007F9A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44D88FCF1C3CB38F0007F9A9 /* main.m */,
+				44D890301C3CBC380007F9A9 /* XHPrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44D88FE71C3CB38F0007F9A9 /* XHWxPayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				44D88FE81C3CB38F0007F9A9 /* XHWxPayDemoTests.m */,
+				44D88FEA1C3CB38F0007F9A9 /* Info.plist */,
+			);
+			path = XHWxPayDemoTests;
+			sourceTree = "<group>";
+		};
+		44D88FF21C3CB38F0007F9A9 /* XHWxPayDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44D88FF31C3CB38F0007F9A9 /* XHWxPayDemoUITests.m */,
+				44D88FF51C3CB38F0007F9A9 /* Info.plist */,
+			);
+			path = XHWxPayDemoUITests;
+			sourceTree = "<group>";
+		};
+		44D890201C3CB8850007F9A9 /* WxPayAPI */ = {
+			isa = PBXGroup;
+			children = (
+				44D890191C3CB8770007F9A9 /* libWeChatSDK.a */,
+				44D8901A1C3CB8770007F9A9 /* read_me.txt */,
+				44D8901B1C3CB8770007F9A9 /* WechatAuthSDK.h */,
+				44D8901C1C3CB8770007F9A9 /* WXApi.h */,
+				44D8901D1C3CB8770007F9A9 /* WXApiObject.h */,
+				44D890101C3CB7A40007F9A9 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				44D890111C3CB7A40007F9A9 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				44D890121C3CB7A40007F9A9 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+				44D890131C3CB7A40007F9A9 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				44D890141C3CB7A40007F9A9 /* WXMediaMessage+messageConstruct.h */,
+				44D890151C3CB7A40007F9A9 /* WXMediaMessage+messageConstruct.m */,
+				44D890071C3CB74D0007F9A9 /* WXApiManager.h */,
+				44D890081C3CB74D0007F9A9 /* WXApiManager.m */,
+				44D890091C3CB74D0007F9A9 /* WXApiRequestHandler.h */,
+				44D8900A1C3CB74D0007F9A9 /* WXApiRequestHandler.m */,
+				44D8900B1C3CB74D0007F9A9 /* WXApiResponseHandler.h */,
+				44D8900C1C3CB74D0007F9A9 /* WXApiResponseHandler.m */,
+				44D890041C3CB7400007F9A9 /* WXUtil.h */,
+				44D890051C3CB7400007F9A9 /* WXUtil.mm */,
+				44D890011C3CB7280007F9A9 /* ApiXml.h */,
+				44D890021C3CB7280007F9A9 /* ApiXml.mm */,
+			);
+			name = WxPayAPI;
+			sourceTree = "<group>";
+		};
+		44D8902F1C3CBB890007F9A9 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				44D8902D1C3CBAFE0007F9A9 /* Security.framework */,
+				44D8902B1C3CB9700007F9A9 /* Foundation.framework */,
+				44D890291C3CB9650007F9A9 /* UIKit.framework */,
+				44D890271C3CB95C0007F9A9 /* libsqlite3.0.tbd */,
+				44D890251C3CB9520007F9A9 /* libz.tbd */,
+				44D890231C3CB9430007F9A9 /* SystemConfiguration.framework */,
+				44D890211C3CB9330007F9A9 /* CoreTelephony.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44D88FCA1C3CB38F0007F9A9 /* XHWxPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D88FF81C3CB38F0007F9A9 /* Build configuration list for PBXNativeTarget "XHWxPayDemo" */;
+			buildPhases = (
+				44D88FC71C3CB38F0007F9A9 /* Sources */,
+				44D88FC81C3CB38F0007F9A9 /* Frameworks */,
+				44D88FC91C3CB38F0007F9A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XHWxPayDemo;
+			productName = XHWxPayDemo;
+			productReference = 44D88FCB1C3CB38F0007F9A9 /* XHWxPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44D88FE31C3CB38F0007F9A9 /* XHWxPayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D88FFB1C3CB38F0007F9A9 /* Build configuration list for PBXNativeTarget "XHWxPayDemoTests" */;
+			buildPhases = (
+				44D88FE01C3CB38F0007F9A9 /* Sources */,
+				44D88FE11C3CB38F0007F9A9 /* Frameworks */,
+				44D88FE21C3CB38F0007F9A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D88FE61C3CB38F0007F9A9 /* PBXTargetDependency */,
+			);
+			name = XHWxPayDemoTests;
+			productName = XHWxPayDemoTests;
+			productReference = 44D88FE41C3CB38F0007F9A9 /* XHWxPayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44D88FEE1C3CB38F0007F9A9 /* XHWxPayDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44D88FFE1C3CB38F0007F9A9 /* Build configuration list for PBXNativeTarget "XHWxPayDemoUITests" */;
+			buildPhases = (
+				44D88FEB1C3CB38F0007F9A9 /* Sources */,
+				44D88FEC1C3CB38F0007F9A9 /* Frameworks */,
+				44D88FED1C3CB38F0007F9A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D88FF11C3CB38F0007F9A9 /* PBXTargetDependency */,
+			);
+			name = XHWxPayDemoUITests;
+			productName = XHWxPayDemoUITests;
+			productReference = 44D88FEF1C3CB38F0007F9A9 /* XHWxPayDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44D88FC31C3CB38F0007F9A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = xhliang;
+				TargetAttributes = {
+					44D88FCA1C3CB38F0007F9A9 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					44D88FE31C3CB38F0007F9A9 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 44D88FCA1C3CB38F0007F9A9;
+					};
+					44D88FEE1C3CB38F0007F9A9 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 44D88FCA1C3CB38F0007F9A9;
+					};
+				};
+			};
+			buildConfigurationList = 44D88FC61C3CB38F0007F9A9 /* Build configuration list for PBXProject "XHWxPayDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44D88FC21C3CB38F0007F9A9;
+			productRefGroup = 44D88FCC1C3CB38F0007F9A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44D88FCA1C3CB38F0007F9A9 /* XHWxPayDemo */,
+				44D88FE31C3CB38F0007F9A9 /* XHWxPayDemoTests */,
+				44D88FEE1C3CB38F0007F9A9 /* XHWxPayDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44D88FC91C3CB38F0007F9A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D88FDE1C3CB38F0007F9A9 /* LaunchScreen.storyboard in Resources */,
+				44D88FDB1C3CB38F0007F9A9 /* Assets.xcassets in Resources */,
+				44D8901F1C3CB8770007F9A9 /* read_me.txt in Resources */,
+				44D88FD91C3CB38F0007F9A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D88FE21C3CB38F0007F9A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D88FED1C3CB38F0007F9A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44D88FC71C3CB38F0007F9A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D890031C3CB7280007F9A9 /* ApiXml.mm in Sources */,
+				44D88FD61C3CB38F0007F9A9 /* ViewController.m in Sources */,
+				44D890161C3CB7A40007F9A9 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
+				44D890171C3CB7A40007F9A9 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
+				44D890341C3CC4980007F9A9 /* WXHelper.m in Sources */,
+				44D890061C3CB7400007F9A9 /* WXUtil.mm in Sources */,
+				44D890181C3CB7A40007F9A9 /* WXMediaMessage+messageConstruct.m in Sources */,
+				44D8900D1C3CB74D0007F9A9 /* WXApiManager.m in Sources */,
+				44D8900E1C3CB74D0007F9A9 /* WXApiRequestHandler.m in Sources */,
+				44D88FD31C3CB38F0007F9A9 /* AppDelegate.m in Sources */,
+				44D88FD01C3CB38F0007F9A9 /* main.m in Sources */,
+				44D8900F1C3CB74D0007F9A9 /* WXApiResponseHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D88FE01C3CB38F0007F9A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D88FE91C3CB38F0007F9A9 /* XHWxPayDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D88FEB1C3CB38F0007F9A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D88FF41C3CB38F0007F9A9 /* XHWxPayDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44D88FE61C3CB38F0007F9A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D88FCA1C3CB38F0007F9A9 /* XHWxPayDemo */;
+			targetProxy = 44D88FE51C3CB38F0007F9A9 /* PBXContainerItemProxy */;
+		};
+		44D88FF11C3CB38F0007F9A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44D88FCA1C3CB38F0007F9A9 /* XHWxPayDemo */;
+			targetProxy = 44D88FF01C3CB38F0007F9A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44D88FD71C3CB38F0007F9A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D88FD81C3CB38F0007F9A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44D88FDC1C3CB38F0007F9A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44D88FDD1C3CB38F0007F9A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44D88FF61C3CB38F0007F9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44D88FF71C3CB38F0007F9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44D88FF91C3CB38F0007F9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = XHWxPayDemo/XHPrefixHeader.pch;
+				INFOPLIST_FILE = XHWxPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iChronoCloud.XHWxPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		44D88FFA1C3CB38F0007F9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = XHWxPayDemo/XHPrefixHeader.pch;
+				INFOPLIST_FILE = XHWxPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iChronoCloud.XHWxPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		44D88FFC1C3CB38F0007F9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XHWxPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iChronoCloud.XHWxPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XHWxPayDemo.app/XHWxPayDemo";
+			};
+			name = Debug;
+		};
+		44D88FFD1C3CB38F0007F9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XHWxPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iChronoCloud.XHWxPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XHWxPayDemo.app/XHWxPayDemo";
+			};
+			name = Release;
+		};
+		44D88FFF1C3CB38F0007F9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XHWxPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iChronoCloud.XHWxPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XHWxPayDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		44D890001C3CB38F0007F9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XHWxPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iChronoCloud.XHWxPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XHWxPayDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44D88FC61C3CB38F0007F9A9 /* Build configuration list for PBXProject "XHWxPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D88FF61C3CB38F0007F9A9 /* Debug */,
+				44D88FF71C3CB38F0007F9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D88FF81C3CB38F0007F9A9 /* Build configuration list for PBXNativeTarget "XHWxPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D88FF91C3CB38F0007F9A9 /* Debug */,
+				44D88FFA1C3CB38F0007F9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D88FFB1C3CB38F0007F9A9 /* Build configuration list for PBXNativeTarget "XHWxPayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D88FFC1C3CB38F0007F9A9 /* Debug */,
+				44D88FFD1C3CB38F0007F9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44D88FFE1C3CB38F0007F9A9 /* Build configuration list for PBXNativeTarget "XHWxPayDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D88FFF1C3CB38F0007F9A9 /* Debug */,
+				44D890001C3CB38F0007F9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44D88FC31C3CB38F0007F9A9 /* Project object */;
+}
