@@ -40,7 +40,7 @@
         CGColorSpaceModel imageColorSpaceModel = CGColorSpaceGetModel(CGImageGetColorSpace(imageRef));
         CGColorSpaceRef colorspaceRef = CGImageGetColorSpace(imageRef);
         
-        bool unsupportedColorSpace = (imageColorSpaceModel == 0 || imageColorSpaceModel == -1 || imageColorSpaceModel == kCGColorSpaceModelIndexed);
+        bool unsupportedColorSpace = (imageColorSpaceModel == 0 || imageColorSpaceModel == -1 || imageColorSpaceModel == kCGColorSpaceModelCMYK || imageColorSpaceModel == kCGColorSpaceModelIndexed);
         if (unsupportedColorSpace)
             colorspaceRef = CGColorSpaceCreateDeviceRGB();
     
@@ -54,7 +54,7 @@
         // Draw the image into the context and retrieve the new image, which will now have an alpha layer
         CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
         CGImageRef imageRefWithAlpha = CGBitmapContextCreateImage(context);
-        UIImage *imageWithAlpha = [UIImage imageWithCGImage:imageRefWithAlpha];
+        UIImage *imageWithAlpha = [UIImage imageWithCGImage:imageRefWithAlpha scale:image.scale orientation:image.imageOrientation];
     
         if (unsupportedColorSpace)
             CGColorSpaceRelease(colorspaceRef);
